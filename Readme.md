@@ -40,3 +40,26 @@
 
 - type/fill : used to enter the vakues in th i/p field
 - to erase the data / to re-enter the correct data make the fill with empty string
+
+
+## session 13 : How to wprk with locators which extract multiple web-elements in page.
+- selecting the card-body  and a tag inside card
+- when we have all the card elements with same classname: we make use first() ot nth(number) fro selecting perticular card 
+
+## session 14 : Understanding how wait mechanism works if list of elements are returned.
+-  check out auto wait in the documentation
+-  it waits until a DOM elements is attached to it.
+-  Practice: https://rahulshettyacademy.com/client/
+- username:dummy194194@gmail.com   password:Dummy194194@
+
+## session 15: Techniques to wait dynamically for new pages in service based application
+-  solving the assignment
+- wait untill all the network calls are made ,then test by making use of  eg: await page.waitForLoadState('networkidle')
+- or eg: await page.locator(".card-body b").first().waitFor()
+
+## session 16: Home work code
+
+## session 17: Handling static Select dropdown options with playwright
+-  selecting dropdown
+- selecting  radio button
+- page.pause()
