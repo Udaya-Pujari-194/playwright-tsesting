@@ -14,7 +14,9 @@ export default defineConfig({
   reporter: 'html',
   use: {
     browserName: 'firefox',
-    headless: false
+    headless: false,
+    screenshot: 'on',
+    trace: 'on'
   },
 
 });

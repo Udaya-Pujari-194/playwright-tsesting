@@ -63,3 +63,46 @@
 -  selecting dropdown
 - selecting  radio button
 - page.pause()
+
+## session 18:Selecting radio buttons,checkboxes and implement expect assertions
+- toBeChecked()
+- isChecked()
+- unchecked()
+- toBeFalsy()
+
+## session 19 : Using async await with Assertions and understand validating the attributes
+-  await page.locator('.radiotextsty').last().click() :: the await is at begining this is because, 
+                                                        - it is required when we are performing actions like click(),toBeChecked etc are performing outside i.e at the end
+- expect(await page.locator("#terms").isChecked()).toBeFalsy() :: the await inside the expect because
+                                                        - the action is performed inside the bracket
+- NOTE: `make use of await properly`
+
+- testing link is blinking of not: `by making use of attribute`
+       - `toHaveAttribute`
+
+## session 20 : Handling child Windows & Tabs with Playwright by switching browser context
+- context.waitForEvent : wait for pages to open in background
+- learnt going to new window on click of link, fetching the text content from the new window and writing fetched text content back to the parent  window.
+- i.e basically flipping between the pages
+
+## session 21 : What is playwright inspector?  and how to debug the playwright script.
+- npx playwright test `folder/filename` --debug  (run in debug mode).
+
+## session 22 : Codegen tool to record and playback with generated automation script
+- npx playwright codegen https://rahulshettyacademy.com/loginpagePractise/
+
+## session 23 : not inportant ,just a advatisement
+
+## session 24 : Detailed view of Test Traces,HTML reports,logs & screenshots for test results
+- go to config.js file and add
+       - screenshot: 'on',
+       - trace: 'on'
+- refresh the project
+       - test-results
+       - playwright-reports    ====>right click `index.html` and copy the path
+- https://trace.playwright.dev/   add yout trace zip downloaded file.
+
+- to get the failed traces then make the trace value in config.js file to : ` trace:'reatin-on-failure'`
+- trace can be on,off,retain-on-failure.
+
+## session 25 : 
